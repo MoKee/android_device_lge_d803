@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product-if-exists, vendor/lge/d800/d800-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/d803/d803-vendor.mk)
 $(call inherit-product, device/lge/g2-common/g2.mk)
 
 ## overlays
@@ -23,6 +23,9 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_PROPERTY_OVERRIDES += \
         telephony.lteOnCdmaDevice=1 \
         ro.telephony.default_network=10
+
+PRODUCT_COPY_FILES += \
+        frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
 
 # NFC packages
 PRODUCT_PACKAGES += \

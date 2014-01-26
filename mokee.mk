@@ -1,8 +1,8 @@
 ## Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/gsm.mk)
+$(call inherit-product, vendor/mk/config/gsm.mk)
 
-## Inherit some common cyaogenmod stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+## Inherit some common MoKee stuff.
+$(call inherit-product, vendor/mk/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
@@ -13,7 +13,7 @@ $(call inherit-product, device/lge/d803/d803.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := d803
-PRODUCT_NAME := cm_d803
+PRODUCT_NAME := mk_d803
 PRODUCT_BRAND := LGE
 PRODUCT_MODEL := LG-D803
 PRODUCT_MANUFACTURER := lge
