@@ -1,7 +1,3 @@
-# Boot animation
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1080
-
 # Inherit some common MK stuff.
 $(call inherit-product, vendor/mk/config/common_full_phone.mk)
 
@@ -21,5 +17,3 @@ PRODUCT_MANUFACTURER := lge
 PRODUCT_BUILD_PROP_OVERRIDES += \
 	BUILD_FINGERPRINT=lge/g2_ca/g2:4.4.2/KOT49I.D803B20e/D803B20e.1394602420:user/release-keys \
 	PRIVATE_BUILD_DESC="g2_ca-user 4.4.2 KOT49I D803B20e.1394602420 release-keys"
-
-PRODUCT_PACKAGES += Torch
