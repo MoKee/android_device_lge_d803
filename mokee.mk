@@ -1,9 +1,6 @@
 # Inherit some common MK stuff.
 $(call inherit-product, vendor/mk/config/common_full_phone.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/mk/config/nfc_enhanced.mk)
-
 # Inherit device configuration
 $(call inherit-product, device/lge/d803/d803.mk)
 
